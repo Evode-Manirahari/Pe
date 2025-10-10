@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    background-color: #fdfcfb;
+    color: #2d2522;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    color: #1a1412;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-soft p-6 transition-all duration-200 hover:shadow-medium;
+    border: 1px solid #f5f1ea;
+  }
+  
+  .btn-primary {
+    @apply text-white font-medium px-4 py-2.5 rounded-lg transition-all duration-150 shadow-soft hover:shadow-medium active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+    background-color: #102a43;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0a1929;
+  }
+  
+  .btn-secondary {
+    @apply font-medium px-4 py-2.5 rounded-lg transition-all duration-150 active:scale-[0.98];
+    background-color: #faf8f5;
+    color: #2d2522;
+    border: 1px solid #ede6db;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f5f1ea;
+    border-color: #e3d5c3;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium border;
+  }
+  
+  .badge-success {
+    @apply badge bg-green-50 text-green-800 border-green-200;
+  }
+  
+  .badge-warning {
+    @apply badge bg-yellow-50 text-yellow-900 border-yellow-200;
+  }
+  
+  .badge-danger {
+    @apply badge bg-red-50 text-red-800 border-red-200;
+  }
+  
+  .badge-info {
+    @apply badge bg-blue-50 text-blue-900 border-blue-200;
+  }
+  
+  .badge-empathy {
+    @apply badge;
+    background-color: #faf8f5;
+    color: #3a302c;
+    border-color: #ede6db;
+  }
+}
+
+/* Custom scrollbar - Sophisticated style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #faf8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+  background-color: #e3d5c3;
+  transition: background-color 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d4c2a8;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #faf8f5;
+}
+
