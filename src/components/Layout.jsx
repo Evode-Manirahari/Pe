@@ -18,6 +18,8 @@ import {
   Sparkles
 } from 'lucide-react'
 import { mockClinician } from '../data/mockData'
+import VoiceCommand from './VoiceCommand'
+import SmartNavigator from './SmartNavigator'
 
 const Layout = ({ children }) => {
   const location = useLocation()
@@ -220,6 +222,10 @@ const Layout = ({ children }) => {
           {children}
         </div>
       </div>
+
+      {/* AI-Powered Interface Enhancements */}
+      <VoiceCommand />
+      <SmartNavigator />
     </div>
   )
 }

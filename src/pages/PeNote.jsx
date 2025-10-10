@@ -19,6 +19,7 @@ import {
 } from 'lucide-react'
 import { mockSessions, mockPatients } from '../data/mockData'
 import { format } from 'date-fns'
+import ClinicalDecisionSupport from '../components/ClinicalDecisionSupport'
 
 const PeNote = () => {
   const { sessionId } = useParams()
@@ -416,6 +417,12 @@ const PeNote = () => {
           </div>
         </div>
       </div>
+
+      {/* AI Clinical Decision Support - Context-aware suggestions */}
+      <ClinicalDecisionSupport 
+        patientContext={patient}
+        sessionContext={selectedSession}
+      />
     </div>
   )
 }
