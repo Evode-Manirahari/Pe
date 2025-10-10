@@ -14,7 +14,8 @@ import {
   LogOut,
   FlaskConical,
   Brain,
-  Cpu
+  Cpu,
+  Sparkles
 } from 'lucide-react'
 import { mockClinician } from '../data/mockData'
 
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
 
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+    { name: 'Insights', href: '/insights', icon: Sparkles, badge: 'NEW' },
     { name: 'PeNote', href: '/penote', icon: FileText, badge: 3 },
     { name: 'PeLoop', href: '/peloop', icon: CheckCircle2, badge: 5 },
     { name: 'Patients', href: '/patients', icon: Users },
@@ -156,7 +158,9 @@ const Layout = ({ children }) => {
                     <span className="ml-3 flex-1 text-sm">{item.name}</span>
                     {item.badge && (
                       <span className={`inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-xs font-semibold rounded ${
-                        isActive ? 'bg-accent-400 text-dark-950' : 'bg-accent-100 text-accent-900 border border-accent-300'
+                        isActive ? 'bg-accent-400 text-dark-950' : 
+                        item.badge === 'NEW' ? 'bg-success-100 text-success-900 border border-success-300' :
+                        'bg-accent-100 text-accent-900 border border-accent-300'
                       }`}>
                         {item.badge}
                       </span>

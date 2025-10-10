@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
+import Insights from './pages/Insights'
 import PeNote from './pages/PeNote'
 import PeLoop from './pages/PeLoop'
 import Patients from './pages/Patients'
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/insights" element={<Insights />} />
           <Route path="/penote" element={<PeNote />} />
           <Route path="/penote/:sessionId" element={<PeNote />} />
           <Route path="/peloop" element={<PeLoop />} />
