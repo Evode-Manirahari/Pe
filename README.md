@@ -11,9 +11,9 @@
 
 ## 🌱 What is Pe?
 
-**Pe is an AI-powered Health Operating System that helps clinicians stay emotionally present and connected with their patients, while reducing administrative overload and missed follow-ups.
+**Pe is an AI-powered Health Operating System for ALL physicians** — from family medicine to oncology, cardiology to pediatrics. It helps clinicians stay emotionally present and connected with their patients, while reducing administrative overload and missed follow-ups.
 
-It's not just another AI scribe — it's a **compassion-aware care companion** that turns routine clinical work into human moments again.
+It's not just another AI scribe — it's a **compassion-aware care companion** that turns routine clinical work into human moments again, **regardless of specialty**.
 
 ### The Problem
 
@@ -189,27 +189,43 @@ Pe/
 
 ## 🎯 Target Users & Settings
 
-### Primary Users
-- **Licensed Clinical Psychologists**
-- **Behavioral Health Clinicians**
-- **Psychiatrists**
-- **Therapists and Counselors**
+### Primary Users - ALL Physicians
+- **Behavioral Health:** Psychologists, Psychiatrists, Therapists, Counselors
+- **Oncology:** Medical Oncologists, Radiation Oncologists, Surgical Oncologists
+- **Cardiology:** Cardiologists, Cardiac Surgeons, Electrophysiologists
+- **Primary Care:** Family Medicine, Internal Medicine, General Practice
+- **Pediatrics:** Pediatricians, Pediatric Specialists
+- **OB/GYN:** Obstetricians, Gynecologists, Maternal-Fetal Medicine
+- **Surgery:** All surgical specialties
+- **Emergency Medicine:** ER Physicians, Urgent Care
+- **And ALL other medical specialties** - Pe works wherever empathy matters
 
 ### Pilot Settings (Phase 1)
-1. **Behavioral Health Telehealth** ✅ Current Focus
-   - High empathy need
+1. **Behavioral Health Telehealth** ✅ Initial Launch
+   - Highest empathy measurement value
    - Digital-first workflow
    - Fast feedback cycles
 
-2. **Independent/Small-to-Midsize Clinics**
-   - High burnout rates
-   - Limited tech support
-   - Eager for innovation
-
-3. **Specialty Outpatient Clinics**
-   - Oncology, Cardiology, Diabetes
+2. **Oncology Outpatient Clinics** ✅ Expanding
+   - High emotional burden on patients
    - Complex care coordination
-   - Measurable continuity outcomes
+   - Critical continuity needs
+   - Life-or-death importance of empathy
+
+3. **Cardiology & Chronic Disease** ✅ Next Wave
+   - High patient volume
+   - Chronic care management
+   - Medication adherence challenges
+
+4. **Primary Care & Pediatrics** ✅ Scale Phase
+   - Largest physician population
+   - Broadest patient base
+   - Universal burnout reduction need
+
+5. **Universal Healthcare Expansion**
+   - ALL specialties face burnout
+   - ALL patients deserve presence
+   - Pe scales to any medical practice
 
 ---
 

@@ -428,10 +428,12 @@ cd server && npm run dev
 - **Value created:** $28,050/year per clinician
 
 ### Market Opportunity
-- **U.S. behavioral health market:** $77B (2025)
-- **Addressable clinicians:** 500,000+
-- **Target adoption:** 10,000 clinicians (2% market)
+- **U.S. healthcare market:** $4.3T (2025)
+- **Total U.S. physicians:** 1.1M+ across ALL specialties
+- **Addressable market:** 1M+ physicians (behavioral health, oncology, cardiology, primary care, pediatrics, surgery, etc.)
+- **Initial target:** 10,000 physicians (1% market penetration)
 - **Revenue potential:** $50M ARR @ $5,000/clinician/year
+- **Scale potential:** $5B+ ARR at 1M physicians
 
 ### Competitive Positioning
 - **AI Scribes (Suki, Abridge):** $3,000 - $5,000/year

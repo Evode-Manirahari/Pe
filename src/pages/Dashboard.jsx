@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import { mockPatients, mockCareLoops, mockSessions, mockMetrics } from '../data/mockData'
 import { format } from 'date-fns'
+import SpecialtyShowcase from '../components/SpecialtyShowcase'
 
 const Dashboard = () => {
   const urgentLoops = mockCareLoops.filter(loop => loop.priority === 'urgent' || loop.status === 'overdue')
@@ -332,6 +333,9 @@ const Dashboard = () => {
           </div>
         </Link>
       </div>
+
+      {/* Multi-Specialty Showcase */}
+      <SpecialtyShowcase />
     </div>
   )
 }
