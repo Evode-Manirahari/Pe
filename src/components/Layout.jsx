@@ -222,10 +222,6 @@ const Layout = ({ children }) => {
           {children}
         </div>
       </div>
-
-      {/* AI-Powered Interface Enhancements */}
-      <VoiceCommand />
-      <SmartNavigator />
     </div>
   )
 }
