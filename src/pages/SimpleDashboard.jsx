@@ -16,7 +16,7 @@ const SimpleDashboard = () => {
   const [messages, setMessages] = useState([
     {
       type: 'assistant',
-      content: "Good morning, Dr. Martinez! I'm Pe, your care companion. What would you like to do today?",
+      content: "Good morning, Dr. Martinez! I am Pe, your care companion. What would you like to do today?",
       suggestions: [
         'Draft notes from my last session',
         'Show me what needs follow-up',
@@ -50,10 +50,10 @@ const SimpleDashboard = () => {
     }
 
     if (input.toLowerCase().includes('note') || input.toLowerCase().includes('session')) {
-      response.content = "I've drafted notes from your last 2 sessions:\n\n**Sarah Chen** (Oct 8) - Anxiety management session\n**Marcus Johnson** (Oct 9) - Substance use counseling\n\nWould you like to review or edit them?"
+      response.content = "I have drafted notes from your last 2 sessions:\n\n**Sarah Chen** (Oct 8) - Anxiety management session\n**Marcus Johnson** (Oct 9) - Substance use counseling\n\nWould you like to review or edit them?"
       response.actions = [
-        { label: 'Review Sarah\'s note', icon: FileText },
-        { label: 'Review Marcus\'s note', icon: FileText }
+        { label: 'Review Sarah note', icon: FileText },
+        { label: 'Review Marcus note', icon: FileText }
       ]
     } else if (input.toLowerCase().includes('follow') || input.toLowerCase().includes('loop')) {
       response.content = "You have 5 care items that need attention:\n\n🔴 **Urgent:** Marcus Johnson - Medication check (overdue)\n🟡 **Today:** Sarah Chen - Anxiety log review\n🟡 **Tomorrow:** David Patel - Med review\n\nWant me to help you close these?"
@@ -62,7 +62,7 @@ const SimpleDashboard = () => {
         { label: 'Show full list', icon: FileText }
       ]
     } else if (input.toLowerCase().includes('doing') || input.toLowerCase().includes('score') || input.toLowerCase().includes('week')) {
-      response.content = "You're having an exceptional week! 🎉\n\n**Presence Score:** 9.2/10 (up from 8.7)\n**Care Loops Closed:** 12 (best week yet!)\n**Patient Engagement:** 100%\n\nYou're in the top 6% of all Pe clinicians. Keep it up!"
+      response.content = "You are having an exceptional week! 🎉\n\n**Presence Score:** 9.2/10 (up from 8.7)\n**Care Loops Closed:** 12 (best week yet!)\n**Patient Engagement:** 100%\n\nYou are in the top 6% of all Pe clinicians. Keep it up!"
       response.actions = [
         { label: 'See full insights', icon: TrendingUp },
         { label: 'Compare to peers', icon: User }

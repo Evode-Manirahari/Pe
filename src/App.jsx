@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import SimpleDashboard from './pages/SimpleDashboard'
+import ChatInterface from './pages/ChatInterface'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import Insights from './pages/Insights'
@@ -16,11 +16,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Simple ChatGPT-style interface (default) */}
-        <Route path="/" element={<SimpleDashboard />} />
-        <Route path="/simple" element={<SimpleDashboard />} />
+        {/* ChatGPT-style interface with hamburger menu (default) */}
+        <Route path="/" element={<ChatInterface />} />
         
-        {/* Advanced dashboard with full navigation (optional) */}
+        {/* Full dashboard pages accessible via sidebar */}
         <Route path="/advanced/*" element={
           <Layout>
             <Routes>
