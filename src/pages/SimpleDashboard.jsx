@@ -16,7 +16,7 @@ const SimpleDashboard = () => {
   const [messages, setMessages] = useState([
     {
       type: 'assistant',
-      content: 'Good morning, Dr. Martinez! I'm Pe, your care companion. What would you like to do today?',
+      content: "Good morning, Dr. Martinez! I'm Pe, your care companion. What would you like to do today?",
       suggestions: [
         'Draft notes from my last session',
         'Show me what needs follow-up',
