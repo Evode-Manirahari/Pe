@@ -20,30 +20,18 @@ const LandingPage = () => {
       </header>
 
       {/* Main Content */}
-      <main className="px-6 py-20">
-        <div className="w-full max-w-5xl mx-auto">
-          {/* Hero Section */}
-          <div className="text-center mb-32 min-h-[60vh] flex flex-col justify-center">
-            <h1 className="text-7xl md:text-8xl font-bold text-black leading-tight mb-8">
-              Health OS for<br />
-              clinicians.
-            </h1>
-            <Link 
-              to="/chat"
-              className="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
-            >
-              Get Started
-            </Link>
-          </div>
-
-          {/* Demo Video Section - appears when scrolling */}
-          <div className="bg-gray-100 rounded-2xl p-16 text-center shadow-sm">
-            <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-              <div className="w-0 h-0 border-l-[12px] border-l-black border-y-[8px] border-y-transparent ml-1"></div>
-            </div>
-            <h2 className="text-2xl font-semibold text-black mb-2">Demo Video</h2>
-            <p className="text-gray-600">Add your video here</p>
-          </div>
+      <main className="flex-1 flex items-center justify-center px-6">
+        <div className="text-center">
+          <h1 className="text-7xl md:text-8xl font-bold text-black leading-tight mb-8">
+            Health OS for<br />
+            clinicians.
+          </h1>
+          <Link 
+            to="/chat"
+            className="inline-block bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors"
+          >
+            Get Started
+          </Link>
         </div>
       </main>
 
