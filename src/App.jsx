@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
-import FriendlyChat from './pages/FriendlyChat'
+import EssentialPe from './pages/EssentialPe'
 import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import PeNote from './pages/PeNote'
@@ -15,8 +15,8 @@ function App() {
         {/* Landing page (default) */}
         <Route path="/" element={<LandingPage />} />
         
-        {/* Friendly chat interface */}
-        <Route path="/chat" element={<FriendlyChat />} />
+        {/* Essential Pe interface */}
+        <Route path="/chat" element={<EssentialPe />} />
         
         {/* Simple dashboard pages */}
         <Route path="/advanced/*" element={
